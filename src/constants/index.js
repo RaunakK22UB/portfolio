@@ -18,53 +18,60 @@ export const navLinks = [
     id: 4,
     name: 'Contact',
     href: '#contact',
-  },
+  },{
+    id: 5,
+    name: 'Certifications', 
+    href: '/certifications',
+    
+  }, { id: 'cv', name: 'CV', href: '/cv' }, // 👈 Add this
 ];
+
+
 
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
+    name: 'React.js',
+    position: 'Intermediate',
+    img: 'assets/react.jpg',
     review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      'I have a good understanding of React.js and its core concepts like components, props, and state. I can build responsive user interfaces using functional components and hooks like useState and useEffect. I’m also familiar with component-based architecture, conditional rendering, and handling events.',
   },
   {
     id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
+    name: 'MongoDB',
+    position: 'Intermediate',
+    img: 'assets/mgdb.png',
     review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+      'I have a basic understanding of MongoDB, a NoSQL database used to store data in flexible, JSON-like documents. I can perform CRUD operations (Create, Read, Update, Delete) and write queries using MongoDB’s query language. I am familiar with concepts like collections, documents, and indexing.',
   },
   {
     id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
+    name: 'Node.Js',
+    position: 'Intermediate',
+    img: 'assets/node.js.jpg',
     review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      'I have a solid understanding of Node.js, a JavaScript runtime environment used for building fast and scalable backend applications. I can create servers using built-in modules like http, handle file operations, and manage asynchronous tasks efficiently. I am also comfortable working with external packages using npm and building RESTful APIs.',
   },
   {
     id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
+    name: 'JavaScript',
+    position: 'Intermediate',
+    img: 'assets/js.jpg',
     review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      'I have a good grasp of JavaScript fundamentals including variables, data types, functions, loops, and conditionals. I can work with the DOM, handle events, and write interactive client-side logic. I am also familiar with ES6 features like arrow functions, template literals, destructuring, and promises.Let me know if you want to expand or adjust any part!',
   },
 ];
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'Cosmos-Website for Space enthusiasts',
+    desc: 'Cosmos is a web-based platform designed to cater to the curiosity and passion of space enthusiasts. It brings together the latest space news, articles, upcoming missions, astronomical events, and educational content in one unified interface.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      'Whether you are an amateur stargazer or a space science geek, Cosmos offers real-time updates, a user-friendly experience, and rich visual content to keep you informed and inspired about the universe. Its a perfect blend of knowledge, exploration, and community for anyone fascinated by space.',
+    href: 'https://raunakk22ub.github.io/Galaxy_Frontend_Project/',
     texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+    logo: '/assets/space1.jpg',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -85,7 +92,7 @@ export const myProjects = [
       {
         id: 3,
         name: 'TypeScript',
-        path: '/assets/typescript.png',
+        path: '/assets/js.jpg',
       },
       {
         id: 4,
@@ -95,11 +102,12 @@ export const myProjects = [
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    title: 'Onling Voting backend System ',
+    desc: 'The Online Voting Backend System is a secure and efficient backend solution designed to manage and handle the core functionalities of an online voting platform. Built using Node.js and MongoDB, it provides APIs for user registration, authentication, vote casting, and result calculation.',
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+      'The system ensures data integrity, prevents duplicate voting, and maintains a clear record of all transactions. It is ideal for institutions or events that require a reliable and scalable digital voting process.',
+
+    href: 'https://github.com/RaunakK22UB/Voting-App',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/project-logo2.png',
     logoStyle: {
@@ -112,7 +120,7 @@ export const myProjects = [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: '/assets/node.js.jpg',
       },
       {
         id: 2,
@@ -122,7 +130,7 @@ export const myProjects = [
       {
         id: 3,
         name: 'TypeScript',
-        path: '/assets/typescript.png',
+        path: '/assets/mgdb.png',
       },
       {
         id: 4,
@@ -260,29 +268,12 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    name: 'SkyQuest',
+    pos: 'Web Developer Intern',
+    duration: 'May 2024-Aug 2024',
+    title: " Performed Data Scraping: Extracted web data using Python,Utilized Python Libraries Worked with Selenium and BeautifulSoup for automation, Implemented Scrapy Framework: Built web crawlers for large-scale data collection.",
+    icon: '/assets/sq.png',
     animation: 'victory',
   },
-  {
-    id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
-    animation: 'clapping',
-  },
-  {
-    id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
-    animation: 'salute',
-  },
+  
 ];
